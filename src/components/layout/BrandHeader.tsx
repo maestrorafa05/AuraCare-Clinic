@@ -60,16 +60,16 @@ export function BrandHeader({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Container className="flex items-center justify-between gap-6 py-4">
+      <Container className="flex items-center justify-between gap-3 py-3 md:gap-6 md:py-4">
         <a href="#top" className="flex items-center">
           <span>
             <span
-              className={`block font-fashion-display text-2xl leading-none tracking-[-0.04em] md:text-[2rem] ${brandTextClass}`}
+              className={`block font-fashion-display text-xl leading-none tracking-[-0.04em] md:text-[2rem] ${brandTextClass}`}
             >
               {brand}
             </span>
             <span
-              className={`block text-[11px] font-semibold uppercase tracking-[0.28em] ${subTextClass}`}
+              className={`block text-[9px] font-semibold uppercase tracking-[0.2em] md:text-[11px] md:tracking-[0.28em] ${subTextClass}`}
             >
               Aesthetic & Wellness Clinic
             </span>
@@ -98,7 +98,7 @@ export function BrandHeader({
           type="button"
           aria-expanded={isMenuOpen}
           aria-label="Buka menu navigasi"
-          className={`flex h-11 w-11 items-center justify-center rounded-full border transition lg:hidden ${menuButtonClass}`}
+          className={`flex h-10 w-10 items-center justify-center rounded-full border transition md:h-11 md:w-11 lg:hidden ${menuButtonClass}`}
           onClick={() => setIsMenuOpen((value) => !value)}
         >
           <span className="relative h-4 w-5">

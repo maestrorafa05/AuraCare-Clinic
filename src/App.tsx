@@ -174,62 +174,62 @@ function App() {
           />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.2),rgba(0,0,0,0.08)_22%,rgba(0,0,0,0.18)_100%),radial-gradient(circle_at_top_left,rgba(216,192,172,0.16),transparent_24%),radial-gradient(circle_at_85%_10%,rgba(255,255,255,0.12),transparent_20%)]" />
 
-          <Container className="relative flex min-h-screen items-center pb-8 pt-24 md:pb-10 md:pt-28 lg:pt-32">
-            <div className="grid w-full gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
+          <Container className="relative flex min-h-[720px] items-start pb-5 pt-20 md:min-h-screen md:items-center md:pb-10 md:pt-28 lg:pt-32">
+            <div className="grid w-full gap-5 md:gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
               <div className="max-w-3xl text-white">
-                <h1 className="font-fashion-display text-4xl leading-[0.92] tracking-[-0.06em] md:text-6xl xl:text-[4.8rem]">
+                <h1 className="max-w-[17.6rem] font-fashion-display text-[1.82rem] leading-[0.94] tracking-[-0.045em] md:max-w-none md:text-6xl md:leading-[0.92] md:tracking-[-0.06em] xl:text-[4.8rem]">
                   Klinik estetika premium yang tenang, personal, dan tepercaya.
                 </h1>
-                <p className="mt-5 max-w-xl text-sm leading-7 text-white/78 md:text-base">
+                <p className="mt-3 max-w-[17.4rem] text-[9px] leading-4 text-white/78 md:mt-5 md:max-w-xl md:text-base md:leading-7">
                   Perawatan kulit, anti-aging, dan wellness treatment dalam
                   suasana yang elegan dan privat.
                 </p>
-                <div className="mt-8 flex flex-wrap gap-3">
+                <div className="mt-4 flex flex-wrap gap-2 md:mt-8 md:gap-3">
                   <ActionLink
                     to="#booking"
                     variant="light"
-                    className="border-white bg-white hover:bg-[#f6f1ea]"
+                    className="border-white bg-white px-3 py-1.5 text-[9px] hover:bg-[#f6f1ea] md:px-5 md:py-3 md:text-sm"
                   >
                     Atur Jadwal Konsultasi
                   </ActionLink>
                   <ActionLink
                     to="#services"
                     variant="ghost"
-                    className="border-white/22 bg-white/8 text-white hover:bg-white/14"
+                    className="border-white/22 bg-white/8 px-3 py-1.5 text-[9px] text-white hover:bg-white/14 md:px-5 md:py-3 md:text-sm"
                   >
-                    Lihat Pilihan Treatment
+                    Lihat Treatment
                   </ActionLink>
                 </div>
-                <div className="mt-8 grid max-w-2xl gap-3 text-sm text-white/74 sm:grid-cols-3">
-                  <div className="rounded-[22px] border border-white/14 bg-white/8 px-4 py-3 backdrop-blur-md">
-                    Dokter berpengalaman
+                <div className="mt-4 grid max-w-[19.5rem] grid-cols-3 gap-2 text-[8px] font-medium leading-3 text-white/76 md:mt-8 md:max-w-2xl md:gap-3 md:text-sm md:leading-4 sm:grid-cols-3">
+                  <div className="rounded-2xl border border-white/14 bg-white/8 px-2.5 py-2 backdrop-blur-md md:rounded-[22px] md:px-4 md:py-3">
+                    Dokter estetika
                   </div>
-                  <div className="rounded-[22px] border border-white/14 bg-white/8 px-4 py-3 backdrop-blur-md">
+                  <div className="rounded-2xl border border-white/14 bg-white/8 px-2.5 py-2 backdrop-blur-md md:rounded-[22px] md:px-4 md:py-3">
                     Ruang privat
                   </div>
-                  <div className="rounded-[22px] border border-white/14 bg-white/8 px-4 py-3 backdrop-blur-md">
+                  <div className="rounded-2xl border border-white/14 bg-white/8 px-2.5 py-2 backdrop-blur-md md:rounded-[22px] md:px-4 md:py-3">
                     Reservasi cepat
                   </div>
                 </div>
               </div>
 
               <div className="grid gap-5">
-                <div className="rounded-[32px] border border-white/14 bg-white/10 p-6 text-white shadow-[0_30px_90px_rgba(8,20,18,0.25)] backdrop-blur-xl">
+                <div className="rounded-[26px] border border-white/14 bg-white/10 p-3.5 text-white shadow-[0_30px_90px_rgba(8,20,18,0.25)] backdrop-blur-xl md:rounded-[32px] md:p-6">
                   <div className="flex items-start justify-between gap-4">
                     <div>
-                      <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#dec9b7]">
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#dec9b7] md:text-xs">
                         Jadwal Hari Ini
                       </p>
-                      <h2 className="mt-3 max-w-md font-fashion-display text-3xl leading-none tracking-[-0.05em] md:text-[2.2rem]">
+                      <h2 className="mt-2 max-w-md font-fashion-display text-[1.65rem] leading-[0.92] tracking-[-0.05em] md:mt-3 md:text-[2.2rem]">
                         Reservasi konsultasi yang lebih rapi dan eksklusif.
                       </h2>
                     </div>
-                    <span className="rounded-full border border-white/18 bg-white/10 px-3 py-1 text-xs font-semibold text-white/74">
+                    <span className="rounded-full border border-white/18 bg-white/10 px-2.5 py-1 text-[9px] font-semibold leading-3 text-white/74 md:text-xs md:leading-4">
                       Same-day slot
                     </span>
                   </div>
 
-                  <div className="mt-5 grid gap-3">
+                  <div className="mt-4 grid gap-2.5 md:mt-5 md:gap-3">
                     {[
                       ['09.30', 'Konsultasi dokter estetika'],
                       ['11.00', 'Laser dan rejuvenation session'],
@@ -237,16 +237,16 @@ function App() {
                     ].map(([time, label]) => (
                       <div
                         key={time}
-                        className="flex items-center justify-between rounded-[22px] border border-white/10 bg-black/12 px-4 py-3"
+                        className="flex items-center justify-between rounded-2xl border border-white/10 bg-black/12 px-3.5 py-2 md:rounded-[22px] md:px-4 md:py-3"
                       >
-                        <span className="text-sm font-semibold tracking-[0.08em] text-[#dec9b7]">
+                        <span className="text-[11px] font-semibold tracking-[0.08em] text-[#dec9b7] md:text-sm">
                           {time}
                         </span>
-                        <span className="text-sm text-white/74">{label}</span>
+                        <span className="text-[10px] text-white/74 md:text-sm">{label}</span>
                       </div>
                     ))}
                   </div>
-                  <div className="mt-5 grid gap-3 border-t border-white/10 pt-4 sm:grid-cols-3">
+                  <div className="mt-4 grid grid-cols-3 gap-2 border-t border-white/10 pt-3 md:mt-5 md:gap-3 md:pt-4 sm:grid-cols-3">
                     {[
                       ['Natural result', 'Refined & balanced'],
                       ['Private room', 'Quiet treatment'],
@@ -254,12 +254,12 @@ function App() {
                     ].map(([title, copy]) => (
                       <div
                         key={title}
-                        className="rounded-[20px] bg-white/8 px-4 py-3"
+                        className="rounded-2xl bg-white/8 px-2.5 py-2 md:rounded-[20px] md:px-4 md:py-3"
                       >
-                        <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#dec9b7]">
+                        <p className="text-[7px] font-semibold uppercase tracking-[0.16em] text-[#dec9b7] md:text-[11px] md:tracking-[0.22em]">
                           {title}
                         </p>
-                        <p className="mt-2 text-sm text-white/74">{copy}</p>
+                        <p className="mt-1 text-[9px] leading-3.5 text-white/74 md:mt-2 md:text-sm">{copy}</p>
                       </div>
                     ))}
                   </div>
@@ -269,36 +269,36 @@ function App() {
           </Container>
         </section>
 
-        <section id="services" className="py-24">
+        <section id="services" className="py-14 md:py-24">
           <Container>
             <SectionHeading
               eyebrow="Layanan Klinik"
               title="Temukan treatment yang sesuai untuk kulit sehat, tampilan lebih segar, dan hasil yang tetap natural."
               description="Setiap layanan dirancang untuk membantu Anda memahami pilihan treatment sebelum memulai konsultasi."
             />
-            <div className="mt-14 grid gap-5 lg:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-8 grid grid-cols-2 gap-3 md:mt-14 md:gap-5 lg:grid-cols-2 xl:grid-cols-3">
               {serviceItems.map((item) => (
                 <article
                   key={item.title}
-                  className="rounded-[32px] border border-[#e3d8cd] bg-white p-7 shadow-[0_24px_80px_rgba(23,51,45,0.06)]"
+                  className="rounded-[22px] border border-[#e3d8cd] bg-white p-4 shadow-[0_18px_50px_rgba(23,51,45,0.06)] md:rounded-[32px] md:p-7 md:shadow-[0_24px_80px_rgba(23,51,45,0.06)]"
                 >
-                  <div className="flex items-start justify-between gap-4">
-                    <span className="flex h-14 w-14 items-center justify-center rounded-[22px] bg-[linear-gradient(135deg,#17332d,#4b6a62)] text-sm font-semibold uppercase tracking-[0.18em] text-white">
+                  <div className="flex items-start justify-between gap-2 md:gap-4">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[linear-gradient(135deg,#17332d,#4b6a62)] text-[10px] font-semibold uppercase tracking-[0.14em] text-white md:h-14 md:w-14 md:rounded-[22px] md:text-sm md:tracking-[0.18em]">
                       AC
                     </span>
-                    <span className="rounded-full bg-[#f4ede5] px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#7f5f4b]">
+                    <span className="max-w-[86px] rounded-full bg-[#f4ede5] px-2 py-1 text-[7px] font-semibold uppercase leading-3 tracking-[0.18em] text-[#7f5f4b] md:max-w-none md:px-3 md:text-xs">
                       {item.focus}
                     </span>
                   </div>
-                  <h3 className="mt-7 font-fashion-display text-4xl leading-none tracking-[-0.05em] text-[#17332d]">
+                  <h3 className="mt-5 font-fashion-display text-[1.7rem] leading-[0.9] tracking-[-0.05em] text-[#17332d] md:mt-7 md:text-4xl">
                     {item.title}
                   </h3>
-                  <p className="mt-4 text-sm leading-7 text-[#60716b]">
+                  <p className="mt-3 hidden text-sm leading-7 text-[#60716b] sm:block md:mt-4">
                     {item.description}
                   </p>
-                  <div className="mt-7 flex items-center justify-between border-t border-[#efe5da] pt-5 text-sm">
-                    <span className="text-[#8a7360]">Estimasi sesi</span>
-                    <span className="font-semibold text-[#17332d]">{item.duration}</span>
+                  <div className="mt-5 flex items-center justify-between border-t border-[#efe5da] pt-3 text-[10px] md:mt-7 md:pt-5 md:text-sm">
+                    <span className="hidden text-[#8a7360] sm:inline">Estimasi sesi</span>
+                    <span className="ml-auto font-semibold text-[#17332d]">{item.duration}</span>
                   </div>
                 </article>
               ))}
